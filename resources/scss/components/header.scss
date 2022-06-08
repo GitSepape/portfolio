@@ -1,0 +1,75 @@
+/*------------------------------------*
+$TOPBAR
+*------------------------------------*/
+
+.header {
+    padding: 1.2rem;
+
+    &__desktop {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0rem 5rem;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        padding: 0;
+
+        &--content {
+            margin-right: 4rem;
+        }
+
+        &--content:last {
+            margin-right: 0;
+        }
+
+        &--span {
+            font-size: 1.8rem;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0;
+        margin: 0;
+
+        &--svg {
+            margin-left: 4rem;
+
+            &-last {
+                margin-left: 0rem;;
+            }
+        }
+    }
+
+    &__mobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+/*------------------------------------*
+$MEDIAQUERY
+*------------------------------------*/
+
+//-----> $RESOLUCIÓN TABLET
+
+@media all and (max-width: 830px) {
+    .header {
+        &__desktop {
+            padding: 0rem 1.2rem;
+        }
+    }
+}
+
+//-----> $RESOLUCIÓN MÓVIL
+
+@media all and (max-width: 680px) {
+    
+}

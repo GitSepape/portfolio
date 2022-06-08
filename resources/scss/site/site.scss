@@ -1,0 +1,31 @@
+body, html {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: $black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+svg {
+    height: 4rem;
+    color: $black;
+}
+
+ul {
+    padding: 0;
+}

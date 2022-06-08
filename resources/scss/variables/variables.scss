@@ -1,0 +1,142 @@
+//-----> $COLORS
+
+// 1EC1C1 8CBDBF 7293A0 4D6272
+
+$yellow:            hsl(55,98%,53%);
+$purple:            hsl(310,35%,49%);
+$brown:             hsl(28,55%,32%);
+$black:             hsl(0,0%,0%);
+$orange:            hsl(33,100%,47%);
+$dark-green:        hsl(121,42%,48%);
+$light-green:       hsl(94,59%,44%);
+
+//-----> $TYPOGRAPHY // $FONTS
+
+$font-size: 12;
+$font-weight: 100;
+$padding-space: 5;
+$margin-space: 5;
+
+.center-text {
+    text-align: center;
+}
+
+//-----> $SPACE
+
+$unit: 6px;
+$space: $unit * 2;
+$space--medium: $space * 1.5;
+$padding: $unit;
+$pagemaxwidth: 2048px;
+$pageminwidth: 100px;
+$grid_cell: 5;
+
+
+/*------------------------------------*\
+    $BUCLE COLORS
+\*------------------------------------*/
+
+$brand-colors: (
+'yellow':           $yellow,
+'purple':           $purple,
+'brown':            $brown,
+'black':            $black,
+'orange':           $orange,
+'dark-green':       $dark-green,
+'light-green':      $light-green
+);
+
+@each $color-name, $value in $brand-colors {
+    .color-#{$color-name} {
+        color: $value;
+    }
+    .bg-color-#{$color-name} {
+        background-color: $value;
+    }
+}
+
+/*------------------------------------*\
+    $BUCLE FONT_SIZE
+\*------------------------------------*/
+
+@while $font-size <= 60 {
+    .font__size--#{$font-size} {
+        font-size: ($font-size * 1em);
+    }
+
+    $font-size: $font-size + 6;
+}
+
+/*------------------------------------*\
+    $BUCLE FONT_WEIGHT
+\*------------------------------------*/
+
+@while $font-weight <= 900 {
+    .font__weight--#{$font-weight} {
+        font-weight: ($font-weight * 1);
+    }
+
+    $font-weight: $font-weight + 100;
+}
+
+/*------------------------------------*\
+    $BUCLE PADDING-SPACE
+\*------------------------------------*/
+
+
+@while $padding-space <= 20 {
+    .padding__space--#{$padding-space} {
+        padding-right: ($padding-space * 1%);
+        padding-left: ($padding-space * 1%);
+    }
+
+    $padding-space: $padding-space + 5;
+}
+
+/*------------------------------------*\
+    $BUCLE GRID_CELL
+\*------------------------------------*/
+
+@while $grid_cell <= 100{
+    .grid__cell--#{$grid_cell} {
+        flex: 0 0 calc(#{$grid_cell * 1%} - 16px);
+        margin: 0 0px;
+    }
+    $grid_cell: $grid_cell + 5;
+}
+
+.grid__cell--33 {
+    flex: 0 0 calc(33% - 16px);
+    margin: 0 0px;
+}
+
+.grid__cell--66 {
+    flex: 0 0 calc(66% - 16px);
+    margin: 0 0px;
+}
+
+/*------------------------------------*\
+    $BUCLE MARGIN
+\*------------------------------------*/
+
+@while $margin-space <= 20 {
+    .margin__space--#{$margin-space} {
+        margin-right: ($margin-space * 1%);
+        margin-left: ($margin-space * 1%);
+    }
+
+    $margin-space: $margin-space + 5;
+}
+
+/*------------------------------------*\
+    $MEDIA QUERY BODY
+\*------------------------------------*/
+
+@media all and (min-width: 700px) {
+    body {
+        height: 100%;
+    }
+    html {
+        height: 100%;
+    }
+}
