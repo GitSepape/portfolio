@@ -60,6 +60,8 @@ function Navbar ({ open }) {
                         </li>
                     </ul>
                 </nav>
+            </section>
+            <section>
                 <nav className="">
                     <ul className="header__mobile">
                         <li className="menu--on">

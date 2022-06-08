@@ -389,6 +389,11 @@ a {
   font-weight: 600;
 }
 
+@media all and (max-width: 680px) {
+  a {
+    color: white;
+  }
+}
 svg {
   height: 4rem;
   color: hsl(0deg, 0%, 0%);

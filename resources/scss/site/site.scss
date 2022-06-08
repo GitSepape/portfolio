@@ -15,16 +15,28 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+//-----> $ENLACES
+
 a {
     color: $black;
     text-decoration: none;
     font-weight: 600;
 }
 
+@media all and (max-width: 680px) {
+    a {
+        color: white;
+    }
+}
+
+//-----> $SVG
+
 svg {
     height: 4rem;
     color: $black;
 }
+
+//-----> $LISTAS
 
 ul {
     padding: 0;
