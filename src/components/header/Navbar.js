@@ -61,15 +61,15 @@ function Navbar ({ open }) {
                     </ul>
                 </nav>
             </section>
-            <section>
+            <section className="header__mobile">
                 <nav className="">
-                    <ul className="header__mobile">
-                        <li className="menu--on">
-                            <Link to="/proyectos" className="header__mobile--content">
+                    <ul className="header__mobile--text">
+                        <li className="menu--on header__mobile--li">
+                            <Link to="/proyectos" className="header__mobile--content" onClick={open}>
                                 <span className="header__mobile--span">Proyectos</span>
                             </Link>
                         </li>
-                        <li className="menu--on">
+                        <li className="menu--on header__mobile--li">
                             <a href="mailto:sergiopascual96@gmail.com" className="header__mobile--content">
                                 <span className="header__mobile--span">Contacto</span>
                             </a>
@@ -106,6 +106,7 @@ function Navbar ({ open }) {
                         </li>
                     </ul>
                 </nav>
+                <span className="header__mobile--privacy">Privacidad. etc Consequat nulla sollicitudin libero et suscipit</span>
             </section>
         </NavbarWrapper>
     )

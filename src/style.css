@@ -5,8 +5,8 @@
     $SITE, UTILITIES &&& VARIABLES
 \*------------------------------------*/
 .black {
-  color: hsl(0deg, 0%, 0%) !important;
-  fill: hsl(0deg, 0%, 0%) !important;
+  color: black !important;
+  fill: black !important;
 }
 
 .center-text {
@@ -17,59 +17,59 @@
     $BUCLE COLORS
 \*------------------------------------*/
 .color-yellow {
-  color: hsl(55deg, 98%, 53%);
+  color: #fde912;
 }
 
 .bg-color-yellow {
-  background-color: hsl(55deg, 98%, 53%);
+  background-color: #fde912;
 }
 
 .color-purple {
-  color: hsl(310deg, 35%, 49%);
+  color: #a9519a;
 }
 
 .bg-color-purple {
-  background-color: hsl(310deg, 35%, 49%);
+  background-color: #a9519a;
 }
 
 .color-brown {
-  color: hsl(28deg, 55%, 32%);
+  color: #7e4f25;
 }
 
 .bg-color-brown {
-  background-color: hsl(28deg, 55%, 32%);
+  background-color: #7e4f25;
 }
 
 .color-black {
-  color: hsl(0deg, 0%, 0%);
+  color: black;
 }
 
 .bg-color-black {
-  background-color: hsl(0deg, 0%, 0%);
+  background-color: black;
 }
 
 .color-orange {
-  color: hsl(33deg, 100%, 47%);
+  color: #f08400;
 }
 
 .bg-color-orange {
-  background-color: hsl(33deg, 100%, 47%);
+  background-color: #f08400;
 }
 
 .color-dark-green {
-  color: hsl(121deg, 42%, 48%);
+  color: #47ae49;
 }
 
 .bg-color-dark-green {
-  background-color: hsl(121deg, 42%, 48%);
+  background-color: #47ae49;
 }
 
 .color-light-green {
-  color: hsl(94deg, 59%, 44%);
+  color: #67b22e;
 }
 
 .bg-color-light-green {
-  background-color: hsl(94deg, 59%, 44%);
+  background-color: #67b22e;
 }
 
 /*------------------------------------*\
@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
-  color: hsl(0deg, 0%, 0%);
+  color: black;
   text-decoration: none;
   font-weight: 600;
 }
@@ -396,7 +396,7 @@ a {
 }
 svg {
   height: 4rem;
-  color: hsl(0deg, 0%, 0%);
+  color: black;
 }
 
 ul {
@@ -462,15 +462,43 @@ $TOPBAR
 }
 .header__mobile {
   width: 100%;
+  height: 80vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.header__mobile--text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__mobile--li {
+  padding-bottom: 1.8rem;
+}
+.header__mobile--span {
+  font-size: 2.4rem;
+}
+.header__mobile--privacy {
+  font-size: 1.8rem;
+  color: white;
+  width: 70%;
+  text-align: center;
 }
 
 /*------------------------------------*
@@ -492,6 +520,10 @@ $MEDIAQUERY
 }
 @media all and (min-width: 680px) {
   .menu--on {
+    display: none;
+  }
+
+  .header__mobile {
     display: none;
   }
 }
