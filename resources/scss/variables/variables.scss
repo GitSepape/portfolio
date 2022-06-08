@@ -10,6 +10,11 @@ $orange:            hsl(33,100%,47%);
 $dark-green:        hsl(121,42%,48%);
 $light-green:       hsl(94,59%,44%);
 
+.black {
+    color: $black!important;
+    fill: $black!important;
+}
+
 //-----> $TYPOGRAPHY // $FONTS
 
 $font-size: 12;

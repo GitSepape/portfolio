@@ -17,14 +17,14 @@ export const NavbarWrapper = styled.nav`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: turquoise;
+    background: black;
     position: fixed;
     top: 0vh;
     right: ${props => (props.open ? "0" : "-100%")};
     width: 100%;
     height: 100vh;
     transition: right 0.3s linear;
-    padding-top: 0;
+    padding-top: 1.2rem;
 
 @media only screen and (min-width: 680px) {
     flex-direction: row;

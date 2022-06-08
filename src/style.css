@@ -4,6 +4,11 @@
 /*------------------------------------*\
     $SITE, UTILITIES &&& VARIABLES
 \*------------------------------------*/
+.black {
+  color: hsl(0deg, 0%, 0%) !important;
+  fill: hsl(0deg, 0%, 0%) !important;
+}
+
 .center-text {
   text-align: center;
 }
@@ -469,6 +474,20 @@ $MEDIAQUERY
 @media all and (max-width: 830px) {
   .header__desktop {
     padding: 0rem 1.2rem;
+  }
+}
+@media all and (max-width: 680px) {
+  .menu--off {
+    display: none;
+  }
+
+  svg {
+    fill: white;
+  }
+}
+@media all and (min-width: 680px) {
+  .menu--on {
+    display: none;
   }
 }
 /*------------------------------------*\

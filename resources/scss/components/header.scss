@@ -71,5 +71,20 @@ $MEDIAQUERY
 //-----> $RESOLUCIÓN MÓVIL
 
 @media all and (max-width: 680px) {
-    
+    .menu {
+        &--off {
+            display: none;
+        }
+    }
+    svg {
+        fill: white;
+    }
+}
+
+@media all and (min-width: 680px) {
+    .menu {
+        &--on {
+            display: none;
+        }
+    }
 }
