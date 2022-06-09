@@ -12,9 +12,11 @@ body {
 }
 
 .swiper {
-    width: 240px;
+    width: 60%;
     height: 70vh;
     padding-top: 10vh;
+    position: fixed;
+    left: 20%;
 }
 
 .swiper-slide {
