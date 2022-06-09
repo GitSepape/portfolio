@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { HeaderWrapper, LogoTopbar } from "./HeaderStyles";
+import { HeaderWrapper } from "./HeaderStyles";
 import Navbar from "./Navbar";
 import MenuButton from "./Menubutton";
 import Logo from "./Logotopbar";

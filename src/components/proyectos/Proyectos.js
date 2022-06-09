@@ -1,9 +1,8 @@
 import React from "react";
+import MediaQueryCard from "../cards/MediaQueryCard";
 
 const Page = () => (
-    <div>
-        <h1>Proyectos</h1>
-    </div>
+    <MediaQueryCard></MediaQueryCard>
 );
 
 export default Page;

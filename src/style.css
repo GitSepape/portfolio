@@ -5,8 +5,8 @@
     $SITE, UTILITIES &&& VARIABLES
 \*------------------------------------*/
 .black {
-  color: black !important;
-  fill: black !important;
+  color: hsl(0deg, 0%, 0%) !important;
+  fill: hsl(0deg, 0%, 0%) !important;
 }
 
 .center-text {
@@ -17,59 +17,59 @@
     $BUCLE COLORS
 \*------------------------------------*/
 .color-yellow {
-  color: #fde912;
+  color: hsl(55deg, 98%, 53%);
 }
 
 .bg-color-yellow {
-  background-color: #fde912;
+  background-color: hsl(55deg, 98%, 53%);
 }
 
 .color-purple {
-  color: #a9519a;
+  color: hsl(310deg, 35%, 49%);
 }
 
 .bg-color-purple {
-  background-color: #a9519a;
+  background-color: hsl(310deg, 35%, 49%);
 }
 
 .color-brown {
-  color: #7e4f25;
+  color: hsl(28deg, 55%, 32%);
 }
 
 .bg-color-brown {
-  background-color: #7e4f25;
+  background-color: hsl(28deg, 55%, 32%);
 }
 
 .color-black {
-  color: black;
+  color: hsl(0deg, 0%, 0%);
 }
 
 .bg-color-black {
-  background-color: black;
+  background-color: hsl(0deg, 0%, 0%);
 }
 
 .color-orange {
-  color: #f08400;
+  color: hsl(33deg, 100%, 47%);
 }
 
 .bg-color-orange {
-  background-color: #f08400;
+  background-color: hsl(33deg, 100%, 47%);
 }
 
 .color-dark-green {
-  color: #47ae49;
+  color: hsl(121deg, 42%, 48%);
 }
 
 .bg-color-dark-green {
-  background-color: #47ae49;
+  background-color: hsl(121deg, 42%, 48%);
 }
 
 .color-light-green {
-  color: #67b22e;
+  color: hsl(94deg, 59%, 44%);
 }
 
 .bg-color-light-green {
-  background-color: #67b22e;
+  background-color: hsl(94deg, 59%, 44%);
 }
 
 /*------------------------------------*\
@@ -384,7 +384,7 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 a {
-  color: black;
+  color: hsl(0deg, 0%, 0%);
   text-decoration: none;
   font-weight: 600;
 }
@@ -396,7 +396,7 @@ a {
 }
 svg {
   height: 4rem;
-  color: black;
+  color: hsl(0deg, 0%, 0%);
 }
 
 ul {

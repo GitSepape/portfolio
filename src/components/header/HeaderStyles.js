@@ -25,6 +25,7 @@ export const NavbarWrapper = styled.nav`
     height: 100vh;
     transition: right 0.4s linear;
     padding-top: 1.2rem;
+    z-index: 10;
 
 @media only screen and (min-width: 680px) {
     flex-direction: row;
@@ -40,7 +41,7 @@ export const NavbarWrapper = styled.nav`
 export const MenuButtonWrapper = styled.button`
     border: none;
     background: none;
-    z-index: 1;
+    z-index: 11;
 
     @media only screen and (min-width:680px) {
         display: none;
