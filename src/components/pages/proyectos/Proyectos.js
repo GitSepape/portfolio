@@ -1,5 +1,5 @@
 import React from "react";
-import MediaQueryCard from "../cards/MediaQueryCard";
+import MediaQueryCard from "../../cards/MediaQueryCard";
 
 const Page = () => (
     <MediaQueryCard></MediaQueryCard>
