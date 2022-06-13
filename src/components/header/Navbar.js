@@ -19,6 +19,11 @@ function Navbar ({open}) {
                             </Link>
                         </li>
                         <li className="menu--off">
+                            <Link to="/sergio/portfolio" className="header__text--content">
+                                <span className="header__text--span">Home</span>
+                            </Link>
+                        </li>
+                        <li className="menu--off">
                             <Link to="/sergio/portfolio/proyectos" className="header__text--content">
                                 <span className="header__text--span">Proyectos</span>
                             </Link>
@@ -27,11 +32,6 @@ function Navbar ({open}) {
                             <a href="mailto:sergiopascual96@gmail.com" className="header__text--content">
                                 <span className="header__text--span">Contacto</span>
                             </a>
-                        </li>
-                        <li className="menu--off">
-                            <Link to="/" className="header__text--content">
-                                <span className="header__text--span">En/Es</span>
-                            </Link>
                         </li>
                     </ul>
                 </nav>
@@ -65,19 +65,19 @@ function Navbar ({open}) {
                 <nav className="">
                     <ul className="header__mobile--text">
                         <li className="menu--on header__mobile--li">
+                            <Link to="/sergio/portfolio" className="header__mobile--content">
+                                <span className="header__mobile--span">Home</span>
+                            </Link>
+                        </li>
+                        <li className="menu--on header__mobile--li">
                             <Link to="/sergio/portfolio/proyectos" className="header__mobile--content">
                                 <span className="header__mobile--span">Proyectos</span>
                             </Link>
                         </li>
-                        <li className="menu--on header__mobile--li">
+                        <li className="menu--on">
                             <a href="mailto:sergiopascual96@gmail.com" className="header__mobile--content">
                                 <span className="header__mobile--span">Contacto</span>
                             </a>
-                        </li>
-                        <li className="menu--on">
-                            <Link to="/" className="header__mobile--content">
-                                <span className="header__mobile--span">En/Es</span>
-                            </Link>
                         </li>
                     </ul>
                 </nav>

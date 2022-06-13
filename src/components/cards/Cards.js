@@ -4,6 +4,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 
 import "./style.css"
+import InfoCards from "./InfoCards";
 
 function SwipperCard() {
     return (
@@ -14,7 +15,9 @@ function SwipperCard() {
                 modules={[EffectCards]}
                 className="mySwiper"
             >
-                <SwiperSlide>Slide 1</SwiperSlide>
+                <SwiperSlide>
+                    <InfoCards></InfoCards>
+                </SwiperSlide>
                 <SwiperSlide>Slide 2</SwiperSlide>
                 <SwiperSlide>Slide 3</SwiperSlide>
                 <SwiperSlide>Slide 4</SwiperSlide>
