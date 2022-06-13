@@ -1,9 +1,8 @@
 import React from "react";
+import MediaQueryHome from "./MediaQueryHome";
 
 const Page = () => (
-    <div>
-        <h1>Home</h1>
-    </div>
+    <MediaQueryHome></MediaQueryHome>
 );
 
 export default Page;

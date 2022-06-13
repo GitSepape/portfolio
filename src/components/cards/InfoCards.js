@@ -5,7 +5,9 @@ import styled from "styled-components";
 import Post from "./Post";
 
 export const ImagePost = styled.img`
-    width: 100%;
+    width: 100px;
+    height: 100px;
+    background-color:blue;
 `;
 
 const Sidebar = styled.aside`
