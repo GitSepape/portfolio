@@ -536,6 +536,13 @@ $MEDIAQUERY
     display: none;
   }
 }
+.cards__title {
+  color: black;
+}
+.cards__introduccion {
+  color: black;
+}
+
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
