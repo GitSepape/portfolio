@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
     justify-content: space-between;
     align-items: center;
     
-    @media only screen and (max-width:680px) {
+    @media only screen and (max-width:681px) {
         padding-top: 1.2rem;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
@@ -27,7 +27,7 @@ export const NavbarWrapper = styled.nav`
     padding-top: 1.2rem;
     z-index: 10;
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 681px) {
     flex-direction: row;
     position: initial;
     height: auto;
@@ -43,14 +43,14 @@ export const MenuButtonWrapper = styled.button`
     background: none;
     z-index: 11;
 
-    @media only screen and (min-width:680px) {
+    @media only screen and (min-width:681px) {
         display: none;
     }
 
 `;
 
 export const LogoTopbar = styled.div`
-    @media only screen and (min-width:680px) {
+    @media only screen and (min-width:681px) {
         display: none;
     }
     

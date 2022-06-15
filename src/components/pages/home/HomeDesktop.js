@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ButtonHome, CardHome, ContentHome, ImageHome, TitleHome } from "./HomeStyle";
+import { ButtonHome, CardHome, ContentHome, ImageHome, SpanBgWhite, TitleHome } from "./HomeStyle";
 import imagenordenador from './imagenordenador.jpg';
 
 function HomeDesktop() {
@@ -8,7 +8,7 @@ function HomeDesktop() {
             <CardHome>
                 <TitleHome>Hola, 
                     <br></br>
-                    <span>soy Sergio Pascual</span>
+                    <SpanBgWhite>soy Sergio Pascual</SpanBgWhite>
                 </TitleHome>
                 <ContentHome>Desarrollador Front-End</ContentHome>
                 <ButtonHome>

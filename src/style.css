@@ -370,6 +370,7 @@ body, html {
   margin: 0;
   padding: 0;
   font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -378,18 +379,21 @@ body, html {
   list-style: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, span {
   margin: 0;
   padding: 0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
 }
 
 a {
   color: hsl(0deg, 0%, 0%);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
 }
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 681px) {
   a {
     color: white;
   }
@@ -407,7 +411,7 @@ ul {
     $COMPONENTS
 \*------------------------------------*/
 .home__description--buttontext {
-  font-weight: 300;
+  font-weight: 600;
   color: black;
 }
 
@@ -514,7 +518,7 @@ $MEDIAQUERY
     padding: 0rem 1.2rem;
   }
 }
-@media all and (max-width: 680px) {
+@media all and (max-width: 681px) {
   .menu--off {
     display: none;
   }
@@ -523,7 +527,7 @@ $MEDIAQUERY
     fill: white;
   }
 }
-@media all and (min-width: 680px) {
+@media all and (min-width: 681px) {
   .menu--on {
     display: none;
   }

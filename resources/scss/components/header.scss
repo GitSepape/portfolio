@@ -95,7 +95,7 @@ $MEDIAQUERY
 
 //-----> $RESOLUCIÓN MÓVIL
 
-@media all and (max-width: 680px) {
+@media all and (max-width: 681px) {
     .menu {
         &--off {
             display: none;
@@ -106,7 +106,7 @@ $MEDIAQUERY
     }
 }
 
-@media all and (min-width: 680px) {
+@media all and (min-width: 681px) {
     .menu {
         &--on {
             display: none;
