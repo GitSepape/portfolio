@@ -1,0 +1,146 @@
+//-----> $CSS DE DETALLES DEL PROYECTO
+
+.detalles {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: auto;
+    margin-top: 100px;
+
+    &__superior {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+
+    }
+
+    &__imagen {
+        width: 400px;
+        height: max-content;
+
+        &--contenedor {
+            // box-shadow: grey 0px 0px 2px;
+            margin-right: 12px;
+        }
+    }
+
+    &__informacion {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        &--titulo {
+            font-size: 4rem;
+            font-weight: 900;
+            margin-bottom: 12px;
+        }
+
+        &--tool {
+            margin-top: 24px;
+            margin-bottom: 8px;
+            font-size: 2.6rem;
+            font-weight: bolder;
+        }
+
+        &--tools {
+            display: flex;
+            align-items: center;
+            padding-left: 1rem;
+            padding-bottom: 0.6rem;
+
+        }
+
+        &--span {
+            font-size: 1.6rem;
+            margin-left: 16px;
+        }
+    }
+
+    &__boton {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: auto;
+    }
+
+    &__enlaces {
+        display: flex;
+
+        &--texto {
+            color: black;
+        }
+    }
+
+    &__icono {
+        width: auto;
+        height: 36px;
+        margin-right: 6px;
+    }
+}
+
+.boton__detalles {
+    padding: 1.6rem 3.6rem;
+    margin: 1rem;
+    width: -webkit-fill-available;
+    border-radius: 16px;
+    background: white;
+    border: none;
+
+}
+
+@media all and (max-width: 930px) {
+    p {
+        font-size: 1.2rem;
+    }
+    
+    .detalles {
+        width: 85%;
+
+        &__superior {
+            // width: 85%;
+        }
+
+        &__imagen {
+            width: 300px;
+        }
+
+        &__informacion {
+
+            &--titulo {
+                font-size: 3rem;
+            }
+        }
+    }
+} 
+
+@media all and (max-width: 681px) {
+    p {
+        font-size: 1.2rem;
+    }
+
+    .detalles {
+        margin-top: 0;
+        align-items: center;
+
+        &__informacion {
+
+            &--span {
+                font-size: 1.2rem;
+            }
+
+            &--titulo {
+                margin-top: 12px;
+            }
+        }
+    }
+
+    .boton {
+
+        &__detalles {
+            padding: 0;
+        }
+    }
+}

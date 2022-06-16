@@ -1,10 +1,77 @@
 .cards {
+    width: 100%;
+
+    &__contenedor {
+        padding: 12px 12px;
+    }
 
     &__title {
         color: black;
+        font-size: 1.8rem;
+        font-weight: 900;
     }
 
     &__introduccion {
         color: black;
+        font-size: 1.2rem;
+        font-weight: 900;
+    }
+
+
+    &__info{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding-top: 1.2rem;
+        padding-bottom: 2.6rem;
+
+        &--herramientas {
+            display: flex;
+            align-items: center;
+            padding-right: 1.2rem;
+            padding-top: 0.8rem;
+        }
+    
+        &--icono {
+            width: 24px;
+            height: 24px;
+        }
+
+        &--nombre {
+            color: black;
+            font-size: 1.2rem;
+            font-weight: 900;
+            border: 2px solid orange;
+            border-radius: 12px;
+            padding: 0.2rem 0.6rem;
+        }
+    }
+
+    &__button {
+        padding: 1.6rem 3.6rem;
+        margin: 1rem;
+        width: max-content;
+        border-radius: 16px;
+        background: white;
+        border-color: black;
     }
 }
+
+@media all and (max-width: 360px) {
+    .cards {
+        &__button {
+            padding: 0.8rem 1.8rem;
+        }
+    }
+} 
+
+@media all and (min-width: 681px) {
+    .cards {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding-top: 3rem;
+    }
+} 

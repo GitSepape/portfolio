@@ -21,12 +21,13 @@ body {
 
 .swiper-slide {
     display: flex;
-    align-items: center;
     justify-content: center;
     border-radius: 18px;
     font-size: 1.8rem;
     font-weight: bold;
     color: #fff;
+    background-color: white;
+    box-shadow: 0px 0px 10px grey;
 }
 
 .swiper-slide {
@@ -35,5 +36,5 @@ body {
 }
 
 .swiper-wrapper {
-    height: auto;
+    height: 70vh;
 }

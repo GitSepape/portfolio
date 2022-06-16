@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import SwipperCard from './Cards';
-import CardsDesktop from './CardsDesktop';
+import DetallesMobile from './ProyectoDetallesMobile';
+import DetallesDesktop from './ProyectosDetallesDesktop';
 
-class MediaQueryCard extends Component {
+class MediaQueryDetalles extends Component {
     constructor(props) {
         super(props)
         this.state = { matches: window.matchMedia("(min-width: 681px)").matches };
@@ -15,11 +15,11 @@ class MediaQueryCard extends Component {
     render() {
         return (
         <div className='cards'>
-            {this.state.matches && (<CardsDesktop></CardsDesktop>)}
-            {!this.state.matches && (<SwipperCard></SwipperCard>)}
+            {this.state.matches && (<DetallesDesktop></DetallesDesktop>)}
+            {!this.state.matches && (<DetallesMobile></DetallesMobile>)}
         </div>
         );
     }
 }
 
-export default MediaQueryCard;
+export default MediaQueryDetalles;
