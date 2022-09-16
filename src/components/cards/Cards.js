@@ -45,7 +45,7 @@ function SwipperCard() {
                                             </ul>
                                             <span className="cards__introduccion">{proyecto.acf.introduccion}</span></div>
                                         </div>
-                                    <Link to={`/sergio/portfolio/proyectos/${proyecto.id}`}>
+                                    <Link to={`/proyectos/${proyecto.id}`}>
                                         <button className="cards__button">VER PROYECTO</button>
                                     </Link>
                             </InfoCards>

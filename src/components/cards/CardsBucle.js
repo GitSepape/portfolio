@@ -27,7 +27,7 @@ export default function CardsBucle() {
 
     return posts.map((proyecto) => 
         <SwiperSlide> 
-            <Link to={`/sergio/portfolio/proyectos/${proyecto.slug}`}>
+            <Link to={`/proyectos/${proyecto.slug}`}>
                 <InfoCards
                     image={proyecto.image}
                     

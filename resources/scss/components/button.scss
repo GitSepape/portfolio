@@ -1,4 +1,13 @@
 .home__description--buttontext {
+    padding: 1.4rem 1.8rem;
     font-weight: 600;
     color: black;
+    transition: all 0.3s;
+}
+
+.home__description--button:hover {
+    background: black;
+    .home__description--buttontext {
+        color: white;
+    }
 }

@@ -9,7 +9,7 @@ function Navbar ({open}) {
                 <nav className="">
                     <ul className="header__text">
                         <li>
-                            <Link to="/sergio/portfolio" className="header__text--content">
+                            <Link to="" className="header__text--content">
                                 <svg width="9rem" height="4.8rem" viewBox="0 0 90 48" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M12.2494 21.0383C11.6762 21.9705 10.7347 22.6177 9.42684 22.9769C10.7347 23.3382 11.6762 23.9833 12.2494 24.9166C12.8226 25.8489 13.1086 27.2164 13.1086 29.0163V35.3004C13.1086 36.4458 13.403 37.3215 13.9926 37.9275C14.5822 38.5326 15.4651 38.8352 16.6432 38.8352H17.3307V45.9538H14.1397C10.7347 45.9538 8.15702 45.1276 6.40667 43.475C4.65528 41.8224 3.7806 39.4567 3.7806 36.3809V28.7703C3.7806 28.0182 3.59128 27.4624 3.21569 27.1013C2.83803 26.7411 2.32352 26.5611 1.66907 26.5611H0V19.3929H1.66907C2.32352 19.3929 2.83803 19.2138 3.21569 18.8527C3.59128 18.4935 3.7806 17.9369 3.7806 17.1835V9.57401C3.7806 6.49835 4.65528 4.13251 6.40667 2.47883C8.15702 0.826417 10.7347 0 14.1397 0H17.3307V7.1188H16.6432C15.4651 7.1188 14.5822 7.42222 13.9926 8.02735C13.403 8.63355 13.1086 9.50805 13.1086 10.6545V16.9386C13.1086 18.7384 12.8226 20.1049 12.2494 21.0383Z"/>
                                     <path d="M22.6933 33.383C20.5324 32.8756 18.7976 32.213 17.4886 31.3949L20.2866 25.0118C21.4977 25.7651 22.9382 26.3619 24.6074 26.8034C26.2765 27.246 27.9301 27.4662 29.5662 27.4662C31.0718 27.4662 32.145 27.3117 32.7829 27C33.421 26.6902 33.7389 26.2396 33.7389 25.65C33.7389 25.0612 33.354 24.6435 32.5854 24.3986C31.8167 24.1527 30.5983 23.9161 28.9283 23.6865C26.8003 23.4252 24.9921 23.0816 23.5031 22.6554C22.0133 22.2305 20.729 21.4442 19.6485 20.2991C18.5681 19.1537 18.0289 17.5494 18.0289 15.4874C18.0289 13.7863 18.5361 12.2707 19.5509 10.9453C20.5654 9.61993 22.0461 8.5733 23.994 7.80369C25.9409 7.03493 28.2738 6.65002 30.9905 6.65002C32.9208 6.65002 34.8368 6.84556 36.7354 7.23877C38.6319 7.63176 40.2206 8.1886 41.4967 8.90778L38.6987 15.2425C36.3422 13.9335 33.7883 13.278 31.0388 13.278C29.5662 13.278 28.4868 13.4499 27.7995 13.7935C27.112 14.1374 26.7684 14.5869 26.7684 15.1436C26.7684 15.7651 27.1439 16.1994 27.8972 16.4443C28.6493 16.6902 29.8934 16.9434 31.6294 17.2058C33.8202 17.533 35.6375 17.9096 37.078 18.3345C38.5187 18.7607 39.7711 19.5376 40.8349 20.6674C41.898 21.7962 42.4299 23.3758 42.4299 25.405C42.4299 27.0741 41.9226 28.5713 40.9081 29.8967C39.8934 31.2221 38.3963 32.2624 36.4154 33.0156C34.4345 33.7677 32.0544 34.1443 29.273 34.1443C27.0452 34.1443 24.8534 33.8903 22.6933 33.383Z"/>
@@ -19,17 +19,17 @@ function Navbar ({open}) {
                             </Link>
                         </li>
                         <li className="menu--off">
-                            <Link to="/sergio/portfolio" className="header__text--content">
+                            <Link to="" className="header__text--content">
                                 <span className="header__text--span">Inicio</span>
                             </Link>
                         </li>
                         <li className="menu--off">
-                            <Link to="/sergio/portfolio/proyectos" className="header__text--content">
+                            <Link to="/proyectos" className="header__text--content">
                                 <span className="header__text--span">Proyectos</span>
                             </Link>
                         </li>
                         <li className="menu--off">
-                            <a href="mailto:sergiopascual96@gmail.com" className="header__text--content">
+                            <a href="mailto:sepape.frontend@sepape.com" className="header__text--content">
                                 <span className="header__text--span">Contacto</span>
                             </a>
                         </li>
@@ -45,14 +45,14 @@ function Navbar ({open}) {
                             </a>
                         </li>
                         <li className="header__icons--svg">
-                            <a href="https://www.linkedin.com/in/sergio-pascual-2a1230144/" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/sepape-pascual-2a1230144/" target="_blank" rel="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
                                 </svg>
                             </a>
                         </li>
                         <li className="header__icons--svg-last">
-                            <a href="https://twitter.com/xSesale" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/sepape_frontend" target="_blank" rel="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
                                 </svg>
@@ -65,17 +65,17 @@ function Navbar ({open}) {
                 <nav className="">
                     <ul className="header__mobile--text">
                         <li className="menu--on header__mobile--li">
-                            <Link to="/sergio/portfolio" className="header__mobile--content">
+                            <Link to="" className="header__mobile--content">
                                 <span className="header__mobile--span">Inicio</span>
                             </Link>
                         </li>
                         <li className="menu--on header__mobile--li">
-                            <Link to="/sergio/portfolio/proyectos" className="header__mobile--content">
+                            <Link to="/proyectos" className="header__mobile--content">
                                 <span className="header__mobile--span">Proyectos</span>
                             </Link>
                         </li>
                         <li className="menu--on">
-                            <a href="mailto:sergiopascual96@gmail.com" className="header__mobile--content">
+                            <a href="mailto:sepape.frontend@sepape.com" className="header__mobile--content">
                                 <span className="header__mobile--span">Contacto</span>
                             </a>
                         </li>
@@ -91,14 +91,14 @@ function Navbar ({open}) {
                             </a>
                         </li>
                         <li className="header__icons--svg">
-                            <a href="https://www.linkedin.com/in/sergio-pascual-2a1230144/" target="_blank" rel="noreferrer">
+                            <a href="https://www.linkedin.com/in/sepape-pascual-2a1230144/" target="_blank" rel="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 16h-2v-6h2v6zm-1-6.891c-.607 0-1.1-.496-1.1-1.109 0-.612.492-1.109 1.1-1.109s1.1.497 1.1 1.109c0 .613-.493 1.109-1.1 1.109zm8 6.891h-1.998v-2.861c0-1.881-2.002-1.722-2.002 0v2.861h-2v-6h2v1.093c.872-1.616 4-1.736 4 1.548v3.359z"/>
                                 </svg>
                             </a>
                         </li>
                         <li className="header__icons--svg-last">
-                            <a href="https://twitter.com/xSesale" target="_blank" rel="noreferrer">
+                            <a href="https://twitter.com/sepape_frontend" target="_blank" rel="noreferrer">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                                     <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.066 9.645c.183 4.04-2.83 8.544-8.164 8.544-1.622 0-3.131-.476-4.402-1.291 1.524.18 3.045-.244 4.252-1.189-1.256-.023-2.317-.854-2.684-1.995.451.086.895.061 1.298-.049-1.381-.278-2.335-1.522-2.304-2.853.388.215.83.344 1.301.359-1.279-.855-1.641-2.544-.889-3.835 1.416 1.738 3.533 2.881 5.92 3.001-.419-1.796.944-3.527 2.799-3.527.825 0 1.572.349 2.096.907.654-.128 1.27-.368 1.824-.697-.215.671-.67 1.233-1.263 1.589.581-.07 1.135-.224 1.649-.453-.384.578-.87 1.084-1.433 1.489z"/>
                                 </svg>

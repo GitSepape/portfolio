@@ -50,12 +50,13 @@ export const ContentHome = styled.span`
 `;
 
 export const ButtonHome = styled.button`
-    padding: 1.2rem 1.8rem;
+    padding: 1.2rem 0rem;
     margin-top: 6rem;
     width: max-content;
     font-size: 2.4rem;
     border-radius: 16px;
     background: white;
+    transition: all 0.3s;
 
     @media only screen and (max-width:680px) {
         font-size: 1.6rem;

@@ -20,7 +20,7 @@ function DetallesMobile() {
 
     return (
     <div>
-        {/* <Link to={`/sergio/portfolio/proyectos`}>
+        {/* <Link to={`/proyectos`}>
             <button className="cards__button">VOLVER</button>
         </Link> */}
         

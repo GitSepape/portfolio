@@ -11,9 +11,9 @@ function App() {
         <Header></Header>
         <main>
             <Routes>
-                <Route path="/sergio/portfolio" element={<Home />}></Route>
-                <Route path="/sergio/portfolio/proyectos" element={<Proyectos />}></Route>
-                <Route path="/sergio/portfolio/proyectos/:id" element={<Detalles />}></Route>
+                <Route path="" element={<Home />}></Route>
+                <Route path="/proyectos" element={<Proyectos />}></Route>
+                <Route path="/proyectos/:id" element={<Detalles />}></Route>
             </Routes>
         </main>
         </>

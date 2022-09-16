@@ -11,8 +11,8 @@ function HomeMobile() {
                     <SpanBgWhite>soy Sergio Pascual</SpanBgWhite>
                 </TitleHome>
                 <ContentHome>Desarrollador Front-End</ContentHome>
-                <ButtonHome>
-                    <Link className="home__description--buttontext" to="/sergio/portfolio/proyectos">Mis proyectos</Link>
+                <ButtonHome className="home__description--button">
+                    <Link className="home__description--buttontext" to="/proyectos">Mis proyectos</Link>
                 </ButtonHome>
             </CardHome>
             <ImageHome src={imagenmobile}></ImageHome>
