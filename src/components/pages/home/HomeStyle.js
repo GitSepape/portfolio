@@ -1,51 +1,46 @@
 import styled from "styled-components";
 
-export const CardHome = styled.div`
+export const CardHomePrincipal = styled.ol`
+    height: 80vh;
+    margin: auto;
+    padding: 0;
     display: flex;
     flex-direction: column;
-    width: 55rem;
+    align-items: center;
+`;
+
+export const CardHome = styled.li`
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     position: absolute;
-    left: 5%;
     top: 25%;
     z-index: 2;
+    margin: auto;
 
-    @media only screen and (max-width:680px) {
-        width: 32rem;
-        top: 10%;
-    }
+`;
 
-    @media only screen and (max-width:340px) {
-        width: 28rem;
-        top: 10%;
-    }
+export const CardHomeText = styled.div`
+    overflow: hidden;
+    padding: 0 2rem;
 `;
 
 export const TitleHome = styled.h1`
-    font-size: 6rem;
+    font-size: 9rem;
 
-    @media only screen and (max-width:680px) {
-        font-size: 3.6rem;
-    }
-
-    @media only screen and (max-width:340px) {
-        font-size: 2.8rem;
+    @media only screen and (max-width:600px) {
+        font-size: 5rem;
     }
 `;
 
-export const ContentHome = styled.span`
-    font-size: 2.4rem;
-    padding-top: 2.4rem;
-    background: white;
+export const ContentHome = styled.h4`
+    padding-left: 2rem;
+    font-size: 4rem;
     width: fit-content;
 
-    @media only screen and (max-width:680px) {
-        font-size: 1.6rem;
-        padding-top: 1.8rem;
-    }
-
-    @media only screen and (max-width:340px) {
-        font-size: 1.4rem;
-        padding-top: 1.8rem;
+    @media only screen and (max-width:600px) {
+        font-size: 2.5rem;
+        padding-left: 0;
     }
 `;
 
@@ -55,15 +50,14 @@ export const ButtonHome = styled.button`
     width: max-content;
     font-size: 2.4rem;
     border-radius: 16px;
-    background: white;
     transition: all 0.3s;
 
-    @media only screen and (max-width:680px) {
+    @media only screen and (max-width:600px) {
         font-size: 1.6rem;
         margin-top:2.4rem;
     }
 
-    @media only screen and (max-width:340px) {
+    @media only screen and (max-width:600px) {
         font-size: 1.4rem;
         margin-top: 2rem;
     }
@@ -77,6 +71,10 @@ export const ImageHome = styled.img`
     z-index: 1;
 `;
 
-export const SpanBgWhite = styled.span`
-    background: white;
+export const SpanBgWhite = styled.h2`
+    font-size: 8rem;
+
+    @media only screen and (max-width:600px) {
+        font-size: 5rem;
+    }
 `;

@@ -1,4 +1,4 @@
-import { Container, ImagePost } from "./CardsStyle";
+import { Container } from "./CardsStyle";
 
 export default function InfoCards(props) {
     

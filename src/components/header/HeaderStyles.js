@@ -24,7 +24,8 @@ export const NavbarWrapper = styled.nav`
     width: 100%;
     height: 100vh;
     transition: right 0.4s linear;
-    padding-top: 1.2rem;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
     z-index: 10;
 
 @media only screen and (min-width: 681px) {
@@ -32,8 +33,9 @@ export const NavbarWrapper = styled.nav`
     position: initial;
     height: auto;
     justify-content: center;
-    background: white;
-    padding-top: 1.2rem;
+    background: none;
+    padding-top: 2.6rem;
+    padding-bottom: 2.6rem;
 }
 
 `;

@@ -1,6 +1,6 @@
 .cards {
     width: 100%;
-
+    
     &__contenedor {
         padding: 12px 12px;
     }
@@ -70,8 +70,9 @@
 @media all and (min-width: 681px) {
     .cards {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
-        flex-wrap: wrap;
-        padding-top: 3rem;
+        flex-wrap: nowrap;
+        padding: 0 8rem;
     }
 } 

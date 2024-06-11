@@ -16,10 +16,13 @@ export const Container = styled.section`
         box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 25%);
         border-radius: 16px;
         width: 300px;
+        background-color: white;
+        border-color: black;
+        border: black;
     }
 
     @media (min-width:949px) {
-        width: 450px;
+        min-width: 400px;
     }
 `;
 
