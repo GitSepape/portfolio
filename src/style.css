@@ -5,8 +5,8 @@
     $SITE, UTILITIES &&& VARIABLES
 \*------------------------------------*/
 .black {
-  color: hsl(0deg, 0%, 0%) !important;
-  fill: hsl(0deg, 0%, 0%) !important;
+  color: hsl(0, 0%, 0%) !important;
+  fill: hsl(0, 0%, 0%) !important;
 }
 
 .center-text {
@@ -17,59 +17,59 @@
     $BUCLE COLORS
 \*------------------------------------*/
 .color-yellow {
-  color: hsl(55deg, 98%, 53%);
+  color: hsl(55, 98%, 53%);
 }
 
 .bg-color-yellow {
-  background-color: hsl(55deg, 98%, 53%);
+  background-color: hsl(55, 98%, 53%);
 }
 
 .color-purple {
-  color: hsl(310deg, 35%, 49%);
+  color: hsl(310, 35%, 49%);
 }
 
 .bg-color-purple {
-  background-color: hsl(310deg, 35%, 49%);
+  background-color: hsl(310, 35%, 49%);
 }
 
 .color-brown {
-  color: hsl(28deg, 55%, 32%);
+  color: hsl(28, 55%, 32%);
 }
 
 .bg-color-brown {
-  background-color: hsl(28deg, 55%, 32%);
+  background-color: hsl(28, 55%, 32%);
 }
 
 .color-black {
-  color: hsl(0deg, 0%, 0%);
+  color: hsl(0, 0%, 0%);
 }
 
 .bg-color-black {
-  background-color: hsl(0deg, 0%, 0%);
+  background-color: hsl(0, 0%, 0%);
 }
 
 .color-orange {
-  color: hsl(33deg, 100%, 47%);
+  color: hsl(33, 100%, 47%);
 }
 
 .bg-color-orange {
-  background-color: hsl(33deg, 100%, 47%);
+  background-color: hsl(33, 100%, 47%);
 }
 
 .color-dark-green {
-  color: hsl(121deg, 42%, 48%);
+  color: hsl(121, 42%, 48%);
 }
 
 .bg-color-dark-green {
-  background-color: hsl(121deg, 42%, 48%);
+  background-color: hsl(121, 42%, 48%);
 }
 
 .color-light-green {
-  color: hsl(94deg, 59%, 44%);
+  color: hsl(94, 59%, 44%);
 }
 
 .bg-color-light-green {
-  background-color: hsl(94deg, 59%, 44%);
+  background-color: hsl(94, 59%, 44%);
 }
 
 /*------------------------------------*\
@@ -360,7 +360,6 @@
   body {
     height: 100%;
   }
-
   html {
     height: 100%;
   }
@@ -377,21 +376,36 @@ body, html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   list-style: none;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p, span {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 p {
   font-size: 1.6rem;
 }
 
+.content {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 a {
-  color: hsl(0deg, 0%, 0%);
+  color: hsl(0, 0%, 0%);
   text-decoration: none;
   font-weight: 900;
   font-family: "Montserrat", sans-serif;
@@ -404,7 +418,7 @@ a {
 }
 svg {
   height: 4rem;
-  color: hsl(0deg, 0%, 0%);
+  color: hsl(0, 0%, 0%);
 }
 
 ul {
@@ -416,7 +430,7 @@ ul {
 \*------------------------------------*/
 .home__description--buttontext {
   padding: 1.4rem 1.8rem;
-  font-weight: 600;
+  font-weight: bold;
   color: black;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -427,6 +441,111 @@ ul {
 }
 .home__description--button:hover .home__description--buttontext {
   color: white;
+}
+
+.rotext {
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.button {
+  pointer-events: auto;
+  cursor: pointer;
+  border: none;
+  padding: 1.5rem 3rem;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  position: relative;
+  display: inline-block;
+}
+
+.button--surtur {
+  padding: 0;
+  background: none;
+  clip-path: circle(40% at 50% 50%);
+}
+
+.textcircle {
+  position: relative;
+  display: block;
+  width: 250px;
+  height: 250px;
+}
+@media all and (max-width: 681px) {
+  .textcircle {
+    fill: var(--text);
+  }
+}
+
+.textcircle text {
+  font-size: 32px;
+  font-weight: 600;
+  fill: var(--text);
+}
+
+.textcircle textPath {
+  letter-spacing: 17px;
+}
+
+.button--surtur:hover .textcircle {
+  -webkit-animation: rotateIt 7s linear infinite;
+          animation: rotateIt 7s linear infinite;
+}
+
+@-webkit-keyframes rotateIt {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateIt {
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.name {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+}
+
+.projects {
+  margin-top: -50px;
+  margin-right: -50px;
+}
+@media all and (max-width: 681px) {
+  .projects {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+
+.themes {
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 /*------------------------------------*
@@ -446,7 +565,20 @@ $TOPBAR
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0rem 5rem;
+  padding: 0rem 8rem;
+}
+.header__container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .header__text {
   display: -webkit-box;
@@ -456,6 +588,7 @@ $TOPBAR
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
+  margin: 0;
 }
 .header__text--content {
   margin-right: 4rem;
@@ -465,6 +598,7 @@ $TOPBAR
 }
 .header__text--span {
   font-size: 1.8rem;
+  font-weight: bold;
 }
 .header__icons {
   display: -webkit-box;
@@ -516,12 +650,17 @@ $TOPBAR
 }
 .header__mobile--span {
   font-size: 2.4rem;
+  color: white;
 }
 .header__mobile--privacy {
   font-size: 1.8rem;
   color: white;
   width: 70%;
   text-align: center;
+}
+
+.footer--off {
+  margin: 25px;
 }
 
 /*------------------------------------*
@@ -536,7 +675,6 @@ $MEDIAQUERY
   .menu--off {
     display: none;
   }
-
   svg {
     fill: white;
   }
@@ -545,7 +683,6 @@ $MEDIAQUERY
   .menu--on {
     display: none;
   }
-
   .header__mobile {
     display: none;
   }
@@ -626,11 +763,15 @@ $MEDIAQUERY
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding-top: 3rem;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    padding: 0 8rem;
   }
 }
 .detalles {
@@ -750,7 +891,6 @@ $MEDIAQUERY
   p {
     font-size: 1.2rem;
   }
-
   .detalles {
     width: 85%;
   }
@@ -765,7 +905,6 @@ $MEDIAQUERY
   p {
     font-size: 1.2rem;
   }
-
   .detalles {
     margin-top: 0;
     -webkit-box-align: center;
@@ -778,7 +917,6 @@ $MEDIAQUERY
   .detalles__informacion--titulo {
     margin-top: 12px;
   }
-
   .boton__detalles {
     padding: 0;
   }
@@ -786,3 +924,112 @@ $MEDIAQUERY
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
+.theme {
+  --text: #191716;
+  --bg:radial-gradient(circle, rgb(71, 69, 67) 0%, rgb(255, 255, 250) 62%);
+  --col:#FFFFFA;
+}
+
+.theme--light {
+  --text: #FFFFFA;
+  --bg:radial-gradient(circle, rgb(71, 69, 67) 0%, rgb(25, 23, 22) 65%);
+  --col:#191716;
+}
+
+#light {
+  display: none;
+  font-size: 23px;
+  margin: 0rem 2rem 3rem;
+  cursor: pointer;
+}
+
+#dark {
+  font-size: 23px;
+  margin: 0rem 2rem 3rem;
+  cursor: pointer;
+}
+
+body {
+  background: var(--bg);
+  background-size: 300% 300%;
+  -webkit-animation: bgAnimation 20s ease infinite;
+  animation: bgAnimation 20s ease infinite;
+  height: 100vh;
+  width: 100%;
+}
+
+#about {
+  background: var(--col);
+}
+
+#contact {
+  background: var(--col);
+}
+
+@-webkit-keyframes bgAnimation {
+  0% {
+    background-position: 0% -50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% -50%;
+  }
+}
+@keyframes bgAnimation {
+  0% {
+    background-position: 0% -50%;
+  }
+  25% {
+    background-position: 100% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  75% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% -50%;
+  }
+}
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0rem 1rem;
+  cursor: pointer;
+}
+
+nav ul li #pg {
+  border-bottom: 1px solid var(--text) !important;
+}
+
+nav ul li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-bottom: 1px solid transparent;
+  text-decoration: none;
+  color: var(--text);
+}

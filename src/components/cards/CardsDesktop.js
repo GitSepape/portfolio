@@ -13,7 +13,7 @@ function CardsDesktop() {
     const [posts, setPosts] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://wordpress.esatid3-2021.com/sergio/portfolio/wp-json/wp/v2/posts`)
+        axios.get(`https://wordpress.sepape.com/database/wp-json/wp/v2/posts`)
             .then(response => setPosts(response.data));
     }, []);
 

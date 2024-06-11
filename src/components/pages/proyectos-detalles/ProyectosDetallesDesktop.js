@@ -14,7 +14,7 @@ function DetallesDesktop() {
     const [paginas, setPaginas] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://wordpress.esatid3-2021.com/sergio/portfolio/wp-json/wp/v2/posts/${parametros}`)
+        axios.get(`https://wordpress.sepape.com/database/wp-json/wp/v2/posts/${parametros}`)
             .then(response => setPaginas(response.data));
     }, [parametros]);
 
