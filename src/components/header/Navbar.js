@@ -31,7 +31,7 @@ function Navbar ({open}) {
                             </Link>
                         </li>
                         <li className="menu--off">
-                            <Link to="/aboutme" className="header__text--content">
+                            <Link to="/cv" className="header__text--content">
                                 <span className="header__text--span">Mi CV</span>
                             </Link>
                         </li>

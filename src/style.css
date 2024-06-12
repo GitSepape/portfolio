@@ -661,6 +661,8 @@ $TOPBAR
 
 .footer--off {
   margin: 25px;
+  margin-bottom: 0;
+  padding-bottom: 25px;
 }
 
 /*------------------------------------*
@@ -690,9 +692,6 @@ $MEDIAQUERY
 .cards {
   width: 100%;
 }
-.cards__contenedor {
-  padding: 12px 12px;
-}
 .cards__title {
   color: black;
   font-size: 1.8rem;
@@ -717,8 +716,6 @@ $MEDIAQUERY
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0;
-  padding-top: 1.2rem;
-  padding-bottom: 2.6rem;
 }
 .cards__info--herramientas {
   display: -webkit-box;
@@ -767,10 +764,11 @@ $MEDIAQUERY
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding: 0 8rem;
   }
 }

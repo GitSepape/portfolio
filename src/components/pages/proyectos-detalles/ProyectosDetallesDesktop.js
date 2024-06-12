@@ -17,6 +17,7 @@ function DetallesDesktop() {
         axios.get(`https://wordpress.sepape.com/database/wp-json/wp/v2/posts/${parametros}`)
             .then(response => setPaginas(response.data));
     }, [parametros]);
+    console.log(parametros);
 
     return (
     <div>        
@@ -24,7 +25,7 @@ function DetallesDesktop() {
             <article className="detalles">
                 <div className="detalles__superior">
                     <div className="detalles__imagen--contenedor">
-                        <img className="detalles__imagen" src={paginas.acf && paginas.acf.imagen}></img>
+                        <img className="detalles__imagen" src={paginas.acf && paginas.acf.imagen} alt={"Hola"}></img>
                     </div>
                     <div className="detalles__informacion ">
                         <h3 className="detalles__informacion--titulo">{paginas.title && paginas.title.rendered}</h3>
@@ -33,7 +34,7 @@ function DetallesDesktop() {
                             <h4 className="detalles__informacion--tool">HERRAMIENTAS</h4>
                             { paginas.acf && paginas.acf.herramientas.map((tool) =>
                                 <li className="detalles__informacion--tools">
-                                    <img src={tool.icono} className="cards__info--icono"></img>
+                                    <img src={tool.icono} alt={"svg del incono "} className="cards__info--icono"></img>
                                     <span className="detalles__informacion--span">{tool.nombre}</span>
                                 </li>
                             ) }

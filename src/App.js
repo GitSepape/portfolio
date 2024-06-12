@@ -7,6 +7,7 @@ import Proyectos from './components/pages/proyectos/Proyectos';
 import Detalles from './components/pages/proyectos-detalles/Detalles';
 import { Route, Routes } from 'react-router-dom';
 import Footer from './components/footer/Footer';
+import Cv from './components/pages/cv/Cv';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/aboutme" element={<AboutMe />}></Route>
                     <Route path="/proyectos" element={<Proyectos />}></Route>
                     <Route path="/proyectos/:id" element={<Detalles />}></Route>
+                    <Route path="/cv" element={<Cv />}></Route>
                 </Routes>
             </main>
             <Footer></Footer>
