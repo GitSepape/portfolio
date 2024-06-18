@@ -69,28 +69,58 @@ const curriculum = {
             id: 1,
             title: "Web de SurgEase Innovations.",
             information: {
-              title1: "Encargado de arreglar todos los issues de la web de SurgEase (HTML,ReactJS, SASS, TypeScript).",
-              title2: "Trabajando cerca del equipo de diseño con cada issue que iba apareciendo y requiriendo de arreglo.",
-              title3: "El encargado del diseño utilizaba Figma y la comunicación era mediante vídeos con cada issue que iba apareciendo.",
-              title4: "Gestión del proyecto mediante Notion.",
+              title1: {
+                title: "Encargado de arreglar todos los issues de la web de SurgEase (HTML,ReactJS, SASS, TypeScript).",
+                id: 1,
+              },
+              title2: {
+                title: "Trabajando cerca del equipo de diseño con cada issue que iba apareciendo y requiriendo de arreglo.",
+                id: 2,
+              },
+              title3: {
+                title: "El encargado del diseño utilizaba Figma y la comunicación era mediante vídeos con cada issue que iba apareciendo.",
+                ide: 3,
+              },
+              title4: {
+                title: "Gestión del proyecto mediante Notion.",
+                id: 4,
+              },
             },
           },
           boream: {
             id: 2,
             title: "Proyecto Boream.",
             information: {
-              title1: "Encargado de crear todos los componentes (PUG/JADE, SASS, Angular).",
-              title2: "Trabajando en un equipo de 3 personas cerca del product owner desde la definición de requerimientos hasta la creación de nuevos componentes.",
-              title3: "La encargada del diseño utilizaba Figma y la gestión era mediante la aplicación Trello.",
+              title1: {
+                title: "Encargado de crear todos los componentes (PUG/JADE, SASS, Angular).",
+                id: 1,
+              },
+              title2: {
+                title: "Trabajando en un equipo de 3 personas cerca del product owner desde la definición de requerimientos hasta la creación de nuevos componentes.",
+                id: 2,
+              },
+              title3: {
+                title: "La encargada del diseño utilizaba Figma y la gestión era mediante la aplicación Trello.",
+                ide: 3,
+              },
             },
           },
           ayuntamiento: {
             id: 3,
             title: "Web del ayuntamiento de Madrid.",
             information: {
-              title1: "Encargado de crear y editar componentes existentes (HTML, SASS, JavaScript).",
-              title2: "Trabajando cerca del equipo de diseño y del product owner desde la definición de requerimientos hasta en la creación de nuevos componentes.",
-              title3: "Las personas encargadas del diseño utilizaban Figma y la gestión era mediante la aplicación Trello.",
+              title1: {
+                title: "Encargado de crear y editar componentes existentes (HTML, SASS, JavaScript).",
+                id: 1,
+              },
+              title2: {
+                title: "Trabajando cerca del equipo de diseño y del product owner desde la definición de requerimientos hasta en la creación de nuevos componentes.",
+                id: 2,
+              },
+              title3: {
+                title: "Las personas encargadas del diseño utilizaban Figma y la gestión era mediante la aplicación Trello.",
+                ide: 3,
+              },
             },
           },
         },
@@ -179,6 +209,7 @@ const curriculum = {
       },
     },
     experience: {
+      title : "EXPERIENCE",
       wakkos: {
         id: 1,
         title: "Wakkos Consulting",
@@ -189,34 +220,65 @@ const curriculum = {
             id: 1,
             title: "Website for SurgEase Innovations.",
             information: {
-              title1: "Responsible for fixing all issues on the SurgEase website (HTML, ReactJS, SASS, TypeScript).",
-              title2: "Working closely with the design team for each emerging issue that required fixing.",
-              title3: "The design lead used Figma, and we communicated through videos for each issue that arose.",
-              title4: "Project management using Notion.",
+              title1: {
+                title: "Responsible for fixing all issues on the SurgEase website (HTML, ReactJS, SASS, TypeScript).",
+                id: 1,
+              },
+              title2: {
+                title: "Working closely with the design team for each emerging issue that required fixing.",
+                id: 2,
+              },
+              title3: {
+                title: "The design lead used Figma, and we communicated through videos for each issue that arose.",
+                ide: 3,
+              },
+              title4: {
+                title: "Project management using Notion.",
+                id: 4,
+              },
             },
           },
           boream: {
             id: 2,
             title: "Boream project.",
             information: {
-              title1: "Responsible for creating all components (PUG/JADE, SASS, JavaScript, Angular).",
-              title2: "Working in a team of 3 people closely with the product owner from requirements definition to the creation of new components.",
-              title3: "The design lead used Figma, and we managed the project on Trello.",
+              title1: {
+                title: "Responsible for creating all components (PUG/JADE, SASS, JavaScript, Angular).",
+                id: 1,
+              },
+              title2: {
+                title: "Working in a team of 3 people closely with the product owner from requirements definition to the creation of new components.",
+                id: 2,
+              },
+              title3: {
+                title: "The design lead used Figma, and we managed the project on Trello.",
+                ide: 3,
+              },
             },
           },
           ayuntamiento: {
             id: 3,
             title: "Madrid City Hall website.",
             information: {
-              title1: "Responsible for creating and editing existing components (HTML, SASS, JavaScript).",
-              title2: "Working closely with the design team and the product owner from requirements definition to the creation of new components.",
-              title3: "The design leads used Figma, and we managed the project with Trello.",
+              title1: {
+                title: "Responsible for creating and editing existing components (HTML, SASS, JavaScript).",
+                id: 1,
+              },
+              title2: {
+                title: "Working closely with the design team and the product owner from requirements definition to the creation of new components.",
+                id: 2,
+              },
+              title3: {
+                title: "The design leads used Figma, and we managed the project with Trello.",
+                ide: 3,
+              },
             },
           },
         },
       },
     },
     skills: {
+      title: "SKILLS",
       languages: {
         id: 1,
         title: "Languages",

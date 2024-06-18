@@ -5,6 +5,7 @@ export const CvContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   width: 80%;
+  max-width: 800px;
   margin: auto;
   border-width: 1px;
   border-color: black;
@@ -26,14 +27,21 @@ export const CvLinks = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
+  margin-top: 2.6rem;
+  gap: 0.3rem;
 `;
 
 export const CvEducation = styled.div`
+  display: flex;
+  flex-direction: column;
 
 `;
 
 export const CvExperience = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  align-item: flex-start;
 `;
 
 export const CvSkills = styled.div`

@@ -919,6 +919,167 @@ $MEDIAQUERY
     padding: 0;
   }
 }
+.cv__title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.cv__content {
+  width: 90%;
+  margin: auto;
+}
+.cv__separator {
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  margin: auto;
+}
+.cv__presentation--title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.cv__presentation--profession {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.cv__socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  margin: auto;
+}
+.cv__socials--link {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cv__socials--text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cv__socials--separator {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.cv__education {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin: 1.2rem 0;
+}
+.cv__education--list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.cv__education--location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.cv__education--date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.3rem;
+}
+.cv__education--title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.cv__education--text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cv__education--separator {
+  font-size: 1rem;
+}
+.cv__experience {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 1.2rem;
+}
+.cv__experience--location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0.3rem;
+}
+.cv__experience--separator {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cv__experience--title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.cv__experience--text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.cv__experience--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.6rem;
+}
+.cv__experience--list-title {
+  font-size: 1.2rem;
+  text-decoration: underline;
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.cv__experience--list-content {
+  margin-left: 2rem;
+}
+.cv__experience--list-text {
+  list-style-type: disc;
+  font-size: 1rem;
+}
+.cv__skills--text {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/
