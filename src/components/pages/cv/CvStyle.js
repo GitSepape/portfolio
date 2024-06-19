@@ -45,13 +45,8 @@ export const CvExperience = styled.div`
 `;
 
 export const CvSkills = styled.div`
-
+  display: flex;
+  flex-direction: column;
+  align-item: flex-start;
 `;
 
-export const CvDates = styled.div`
-
-`;
-
-export const CvLocation = styled.div`
-
-`;
