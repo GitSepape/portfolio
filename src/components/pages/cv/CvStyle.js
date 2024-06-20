@@ -48,5 +48,6 @@ export const CvSkills = styled.div`
   display: flex;
   flex-direction: column;
   align-item: flex-start;
+  margin-bottom: 4.2rem;
 `;
 
