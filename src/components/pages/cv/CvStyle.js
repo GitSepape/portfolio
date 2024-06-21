@@ -5,25 +5,30 @@ export const CvContainer = styled.div`
   flex-direction: column;
   align-items: flex-end;
   width: 80%;
-  max-width: 800px;
   margin: auto;
+  margin-top: 2rem;
   border-width: 1px;
   border-color: black;
   border-style: solid;
   border-radius: 8px;
   box-shadow: grey 0px 5px 10px;
 
-  @media only screen and (max-width:750px) {
+  @media only screen and (max-width:700px) {
+    width: 95%;
+  }
+
+  @media only screen and (min-width:700px) {
+    max-width: 800px;
   }
 `;
 
-export const CvPresentation = styled.div`
+export const CvPresentation = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-export const CvLinks = styled.div`
+export const CvLinks = styled.section`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -32,19 +37,19 @@ export const CvLinks = styled.div`
   gap: 0.3rem;
 `;
 
-export const CvEducation = styled.div`
+export const CvEducation = styled.section`
   display: flex;
   flex-direction: column;
 
 `;
 
-export const CvExperience = styled.div`
+export const CvExperience = styled.section`
   display: flex;
   flex-direction: column;
   align-item: flex-start;
 `;
 
-export const CvSkills = styled.div`
+export const CvSkills = styled.section`
   display: flex;
   flex-direction: column;
   align-item: flex-start;

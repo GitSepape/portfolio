@@ -364,7 +364,8 @@
     height: 100%;
   }
 }
-body, html {
+body,
+html {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -379,7 +380,14 @@ body, html {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
@@ -399,9 +407,16 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+@media only screen and (min-width: 681px) {
+  .content {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 a {
@@ -411,11 +426,6 @@ a {
   font-family: "Montserrat", sans-serif;
 }
 
-@media all and (max-width: 681px) {
-  a {
-    color: white;
-  }
-}
 svg {
   height: 4rem;
   color: hsl(0, 0%, 0%);
@@ -593,12 +603,22 @@ $TOPBAR
 .header__text--content {
   margin-right: 4rem;
 }
+@media only screen and (max-width: 1024px) {
+  .header__text--content {
+    margin-right: 2rem;
+  }
+}
 .header__text--content:last {
   margin-right: 0;
 }
 .header__text--span {
   font-size: 1.8rem;
   font-weight: bold;
+}
+@media only screen and (max-width: 1024px) {
+  .header__text--span {
+    font-size: 1.4rem;
+  }
 }
 .header__icons {
   display: -webkit-box;
@@ -919,9 +939,26 @@ $MEDIAQUERY
     padding: 0;
   }
 }
+.cv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  width: 100%;
+}
 .cv__title {
   font-size: 1.4rem;
   font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+  .cv__title {
+    font-size: 1rem;
+  }
 }
 .cv__content {
   width: 90%;
@@ -937,9 +974,19 @@ $MEDIAQUERY
   font-size: 1.6rem;
   font-weight: bold;
 }
+@media only screen and (max-width: 700px) {
+  .cv__presentation--title {
+    font-size: 1.2rem;
+  }
+}
 .cv__presentation--profession {
   font-size: 1.4rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 700px) {
+  .cv__presentation--profession {
+    font-size: 1rem;
+  }
 }
 .cv__socials {
   display: -webkit-box;
@@ -956,13 +1003,28 @@ $MEDIAQUERY
   font-size: 1rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 700px) {
+  .cv__socials--link {
+    font-size: 0.6rem;
+  }
+}
 .cv__socials--text {
   font-size: 1rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 700px) {
+  .cv__socials--text {
+    font-size: 0.6rem;
+  }
+}
 .cv__socials--separator {
   font-size: 1.6rem;
   font-weight: 400;
+}
+@media only screen and (max-width: 700px) {
+  .cv__socials--separator {
+    font-size: 1.2rem;
+  }
 }
 .cv__education {
   display: -webkit-box;
@@ -1010,12 +1072,27 @@ $MEDIAQUERY
   font-size: 1.4rem;
   font-weight: bold;
 }
+@media only screen and (max-width: 700px) {
+  .cv__education--title {
+    font-size: 0.8rem;
+  }
+}
 .cv__education--text {
   font-size: 1rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 700px) {
+  .cv__education--text {
+    font-size: 0.6rem;
+  }
+}
 .cv__education--separator {
   font-size: 1rem;
+}
+@media only screen and (max-width: 700px) {
+  .cv__education--separator {
+    font-size: 0.6rem;
+  }
 }
 .cv__experience {
   display: -webkit-box;
@@ -1044,13 +1121,28 @@ $MEDIAQUERY
   font-size: 1rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 700px) {
+  .cv__experience--separator {
+    font-size: 0.6rem;
+  }
+}
 .cv__experience--title {
   font-size: 1.2rem;
   font-weight: bold;
 }
+@media only screen and (max-width: 700px) {
+  .cv__experience--title {
+    font-size: 0.8rem;
+  }
+}
 .cv__experience--text {
   font-size: 1rem;
   font-weight: 500;
+}
+@media only screen and (max-width: 700px) {
+  .cv__experience--text {
+    font-size: 0.6rem;
+  }
 }
 .cv__experience--content {
   display: -webkit-box;
@@ -1068,18 +1160,54 @@ $MEDIAQUERY
   font-weight: 500;
   margin-bottom: 0.6rem;
 }
+@media only screen and (max-width: 700px) {
+  .cv__experience--list-title {
+    font-size: 0.8rem;
+  }
+}
 .cv__experience--list-content {
   margin-left: 2rem;
 }
 .cv__experience--list-text {
-  list-style-type: disc;
   font-size: 1rem;
+  list-style-type: disc;
+}
+@media only screen and (max-width: 700px) {
+  .cv__experience--list-text {
+    font-size: 0.6rem;
+  }
 }
 .cv__skills--text {
   font-size: 1rem;
   font-weight: 500;
 }
+@media only screen and (max-width: 700px) {
+  .cv__skills--text {
+    font-size: 0.6rem;
+  }
+}
+.cv__download {
+  width: 80%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 1.6rem;
+  padding: 1.6rem 0;
+  border: 1;
+  border-radius: 8px;
+}
+.cv__download--text {
+  font-size: 2rem;
+  font-weight: black;
+}
 
+@media all and (max-width: 700px) {
+  .cv {
+    height: 100%;
+  }
+  .cv__download {
+    width: 95%;
+  }
+}
 /*------------------------------------*\
     $LAYOUT
 \*------------------------------------*/

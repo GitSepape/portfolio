@@ -149,6 +149,11 @@ const curriculum = {
         content: " (Proactivo, trabajo en equipo, responsable, autosuficiente)",
       },
     },
+    download: {
+      title: "Descargar el CV",
+      href: "./../../../../resources/pdf/CVSergioPascual.pdf",
+      name: "CVSergioPascual.pdf",
+    },
   },
   english:
   {
@@ -299,6 +304,11 @@ const curriculum = {
         title: "Soft Skills",
         content: " (Proactive, teamwork, responsible, self-sufficient)",
       },
+    },
+    download: {
+      title: "Download Resume",
+      href: "./../../../../resources/pdf/ResumeSergioPascual.pdf",
+      name: "ResumeSergioPascual.pdf",
     },
   },
 };

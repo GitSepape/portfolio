@@ -5,7 +5,7 @@ export const HeaderWrapper = styled.header`
     justify-content: space-between;
     align-items: center;
     
-    @media only screen and (max-width:681px) {
+    @media only screen and (max-width:680px) {
         padding-top: 1.2rem;
         padding-left: 1.2rem;
         padding-right: 1.2rem;
@@ -24,8 +24,8 @@ export const NavbarWrapper = styled.nav`
     width: 100%;
     height: 100vh;
     transition: right 0.4s linear;
-    padding-top: 2.6rem;
-    padding-bottom: 2.6rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
     z-index: 10;
 
 @media only screen and (min-width: 681px) {
