@@ -693,7 +693,12 @@ $MEDIAQUERY
     padding: 0rem 1.2rem;
   }
 }
-@media all and (max-width: 681px) {
+@media all and (max-width: 680px) {
+  .header__desktop {
+    margin-top: 1.2rem;
+  }
+}
+@media all and (max-width: 680px) {
   .menu--off {
     display: none;
   }
@@ -1192,7 +1197,7 @@ $MEDIAQUERY
   margin: auto;
   margin-top: 1.6rem;
   padding: 1.6rem 0;
-  border: 1;
+  border: 1px solid black;
   border-radius: 8px;
 }
 .cv__download--text {

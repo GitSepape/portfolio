@@ -122,7 +122,15 @@ $MEDIAQUERY
 
 //-----> $RESOLUCIÓN MÓVIL
 
-@media all and (max-width: 681px) {
+@media all and (max-width: 680px) {
+    .header {
+        &__desktop {
+            margin-top: 1.2rem;
+        }
+    }
+}
+
+@media all and (max-width: 680px) {
     .menu {
         &--off {
             display: none;

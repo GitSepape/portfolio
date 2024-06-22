@@ -53,7 +53,12 @@ function Navbar({ open }) {
                         </li>
                         <li className="menu--on header__mobile--li">
                             <Link to="/proyectos" className="header__mobile--content">
-                                <span className="header__mobile--span">Proyectos</span>
+                                <span className="header__mobile--span">Proyectos & Portfolio</span>
+                            </Link>
+                        </li>
+                        <li className="menu--on header__mobile--li">
+                            <Link to="/cv" className="header__mobile--content">
+                                <span className="header__mobile--span">Mi CV</span>
                             </Link>
                         </li>
                         <li className="menu--on">
