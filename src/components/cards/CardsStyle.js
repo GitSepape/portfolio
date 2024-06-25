@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 
 export const Container = styled.section`
-    height: 500px;
+    height: 550px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: inherit;
+    max-width: 400px;
     padding: 3.0rem;
     margin-top: 2.4rem;
 
@@ -16,13 +17,13 @@ export const Container = styled.section`
         margin-left: 12px;
         box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 25%);
         border-radius: 16px;
-        width: 300px;
+        ${'' /* width: 300px; */}
         background-color: white;
         border-color: black;
         border: black;
     }
 
-    @media (min-width:949px) {
+    @media (min-width:1024px) {
         min-width: 400px;
     }
 `;
