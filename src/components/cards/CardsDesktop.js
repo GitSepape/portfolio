@@ -7,17 +7,25 @@ import "./style.css"
 import InfoCards from "./InfoCards";
 import { useEffect, useState } from "react";
 import { ImagePost } from "./CardsStyle";
+import Spinner from "./Spinner";
 
 function CardsDesktop() {
 
     const [posts, setPosts] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
         axios.get(`https://wordpress.sepape.com/database/wp-json/wp/v2/posts`)
-            .then(response => setPosts(response.data));
+            .then(response => {
+                setPosts(response.data);
+            })
+            .finally(() => setLoading(false));
     }, []);
     console.log(setPosts);
 
+    if (loading) return <Spinner />;
+    
     return posts.map((proyecto) =>
         <Link to={`/proyectos/${proyecto.id}`}>
             <InfoCards>

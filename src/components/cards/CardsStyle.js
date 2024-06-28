@@ -10,17 +10,17 @@ export const Container = styled.section`
     max-width: 400px;
     padding: 3.0rem;
     margin-top: 2.4rem;
+    justify-content: space-between;
+    margin-right: 12px;
+    margin-left: 12px;
+    box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 25%);
+    border-radius: 16px;
+    border: 1px solid black;
+    background-color: white;
 
-    @media (min-width:681px) {
-        justify-content: space-between;
-        margin-right: 12px;
-        margin-left: 12px;
-        box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 25%);
-        border-radius: 16px;
-        ${'' /* width: 300px; */}
-        background-color: white;
-        border-color: black;
-        border: black;
+    @media (max-width:681px) {
+        max-width: 320px;
+        height: 450px;
     }
 
     @media (min-width:1024px) {

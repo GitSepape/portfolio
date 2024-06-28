@@ -1,8 +1,10 @@
 import React from "react";
-import MediaQueryCard from "../../cards/MediaQueryCard";
+import CardsDesktop from "../../cards/CardsDesktop";
 
 const Page = () => (
-    <MediaQueryCard></MediaQueryCard>
+    <div className="cards">
+        <CardsDesktop></CardsDesktop>
+    </div>
 );
 
 export default Page;

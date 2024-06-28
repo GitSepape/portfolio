@@ -5,6 +5,7 @@ import axios from "axios";
 
 import "swiper/css";
 import "swiper/css/effect-cards";
+import Spinner from "../../cards/Spinner";
 
 
 function DetallesDesktop() {
@@ -12,13 +13,20 @@ function DetallesDesktop() {
     const params = useParams();
     const parametros = params.id;
     const [paginas, setPaginas] = useState([]);
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
+        setLoading(true);
         axios.get(`https://wordpress.sepape.com/database/wp-json/wp/v2/posts/${parametros}`)
-            .then(response => setPaginas(response.data));
+            .then(response => {
+                setPaginas(response.data);
+            })
+            .finally(() => setLoading(false));
     }, [parametros]);
     console.log(parametros);
 
+    if (loading) return <Spinner />;
+    
     return (
     <div>        
         <section>
