@@ -1,27 +1,29 @@
 //-----> $CSS DE DETALLES DEL PROYECTO
 
 .detalles {
-    width: 70%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: center;
     margin: auto;
-    margin-top: 100px;
+    gap: 4.8rem;
 
     &__superior {
         display: flex;
-        flex-direction: row;
-        align-items: flex-end;
+        flex-direction: column;
+        align-items: flex-start;
 
     }
 
     &__imagen {
         width: 400px;
         height: max-content;
+        border: 1px solid black;
+        border-radius: 16px;
 
         &--contenedor {
             // box-shadow: grey 0px 0px 2px;
-            margin-right: 12px;
         }
     }
 
@@ -69,6 +71,8 @@
 
     &__enlaces {
         display: flex;
+        margin: 0;
+        gap: 2.4rem;
 
         &--texto {
             color: black;
@@ -84,7 +88,6 @@
 
 .boton__detalles {
     padding: 1.6rem 3.6rem;
-    margin: 1rem;
     width: -webkit-fill-available;
     background: white;
     border: none;
@@ -126,7 +129,9 @@
 
     .detalles {
         margin-top: 1.6rem;
-        align-items: center;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 0;
 
         &__informacion {
 
@@ -138,12 +143,29 @@
                 margin-top: 12px;
             }
         }
+
+        &__imagen {
+            width: 100%;
+        }
+
+        &__enlaces {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &__boton {
+            justify-content: center;
+        }
     }
 
     .boton {
 
         &__detalles {
             padding: 0;
+        }
+
+        &__lista {
+            width: 100%;
         }
     }
 }

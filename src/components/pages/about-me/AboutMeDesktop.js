@@ -12,7 +12,6 @@ function AboutMeDesktop() {
         axios.get(`https://wordpress.sepape.com/database/wp-json/wp/v2/pages`)
             .then(response => setPosts(response.data));
     }, []);
-    console.log(posts);
 
     return posts.map((proyecto) =>
         <AboutMe>

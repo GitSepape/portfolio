@@ -9,6 +9,12 @@
   justify-content: space-between;
 }
 
+@media only screen and (max-width:680px) {
+  .content {
+    justify-content: flex-start;
+  }
+}
+
 #root {
   height: 100%;
   display: flex;
