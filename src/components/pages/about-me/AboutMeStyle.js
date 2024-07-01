@@ -1,36 +1,53 @@
 import styled from "styled-components";
 
-export const AboutMe = styled.div`
+export const AboutMe = styled.section`
     color: var(--text);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
+    width: 90%;
+    margin: auto;
 
-    @media only screen and (max-width:750px) {
+    @media only screen and (max-width:680px) {
         align-items: center;
     }
 `;
 
 export const AboutMeLista = styled.article`
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 4.8rem;
+
+    @media only screen and (max-width: 680px) {
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+    }
 `;
 
 export const AboutMeSection = styled.section`
+    padding-right: 5rem;
+    max-width: 60%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 680px) {
+        padding: 0;
+        max-width: 100%;
+    }
+`;
+
+export const AboutMeSectionImage = styled.section`
+    max-width: 500px; 
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-
-    @media only screen and (max-width:750px) {
-        width: 95vw;
-        flex-direction: column;
-    }
 `;
 
 export const AboutMeSectionDown = styled.section`
@@ -39,29 +56,16 @@ export const AboutMeSectionDown = styled.section`
     align-items: center;
     justify-content: space-between;
     width: 100%;
-
-    @media only screen and (max-width:750px) {
-        width: 95vw;
-        flex-direction: column-reverse;
-    }
 `;
 
 export const AboutMeImage = styled.img`
-    width: 20%;
-    margin: 1rem;
-
-    @media only screen and (max-width:750px) {
-        width: 40%
-    }
+    width: 100%;
+    border-radius: 1.6rem;
+    border: 1px solid black;
+    box-shadow: grey 0px 0px 2px;
 `;
 
 export const AboutMeCajaTexto = styled.ol`
-    padding: 8rem;
-    text-align: justify;
-
-    @media only screen and (max-width:750px) {
-        padding: 2rem;
-    }
 `;
 
 export const AboutMeTexto = styled.li`
@@ -69,7 +73,6 @@ export const AboutMeTexto = styled.li`
 `;
 
 export const AboutMeTitulo = styled.h3`
-padding: 0 4rem;
 font-size: 5rem;
 
 @media only screen and (max-width:340px) {
@@ -78,38 +81,26 @@ font-size: 5rem;
 `;
 
 export const AboutMeBoton = styled.button`
-    height: 10rem;
-    width: 10rem;
-    border-radius: 100%;
-    border: none;
-    background: var(--text);
-    margin: 0rem 0rem 0rem 7rem;
-    cursor: pointer;
-    transition: 0.3s;
-    font-weight: 600;
-
-    @media only screen and (max-width:750px) {
-        margin: 1rem 0;
-    }
+    width: 100%;
+    margin: auto;
+    margin-top: 1.6rem;
+    padding: 1.6rem 0;
+    border: 1px solid black;
+    border-radius: 8px;
 `;
 
 export const AboutMeSkills = styled.article`
-    padding: 0rem 6rem 0 6rem;
-
-    @media only screen and (max-width:750px) {
-        padding: 0;
-    }
 `;
 
 export const AboutMeSkillsList = styled.ul`
-    padding: 0rem 0rem 0 7rem;
     list-style: none;
 `;
 
 
 export const AboutMeContacto = styled.a`
     text-decoration: none;
-    color: var(--col);
+    font-size: 2rem;
+    font-weight: black;
 `;
 
 export const AboutMeParrafo = styled.p`

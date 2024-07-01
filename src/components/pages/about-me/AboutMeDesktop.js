@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { AboutMe, AboutMeBoton, AboutMeCajaTexto, AboutMeContacto, AboutMeImage, AboutMeLista, AboutMeParrafo, AboutMeSection, AboutMeSkills, AboutMeSkillsList, AboutMeTexto, AboutMeTitulo, OverFlow } from "./AboutMeStyle";
+import { AboutMe, AboutMeSectionImage, AboutMeBoton, AboutMeCajaTexto, AboutMeContacto, AboutMeImage, AboutMeLista, AboutMeParrafo, AboutMeSection, AboutMeSkills, AboutMeSkillsList, AboutMeTexto, AboutMeTitulo, OverFlow } from "./AboutMeStyle";
 import imagenperfil from './imagenperfil.jpg';
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -16,8 +16,13 @@ function AboutMeDesktop() {
     return posts.map((proyecto) =>
         <AboutMe>
             <AboutMeLista>
-                <AboutMeSection>
+                <AboutMeSectionImage>
                     <AboutMeImage src={imagenperfil} alt="imagen de perfil"></AboutMeImage>
+                    <AboutMeBoton>
+                        <AboutMeContacto href="mailto:sepape.frontend@sepape.com">Contáctame</AboutMeContacto>
+                    </AboutMeBoton>
+                </AboutMeSectionImage>
+                <AboutMeSection>
                     <AboutMeCajaTexto>
                         <AboutMeTexto>
                             <AboutMeTitulo className="animate__animated animate__slideInUp">Sobre mí</AboutMeTitulo> 
@@ -26,11 +31,6 @@ function AboutMeDesktop() {
                             <AboutMeParrafo>{proyecto.acf.introduccionpagina}</AboutMeParrafo>
                         </AboutMeTexto>
                     </AboutMeCajaTexto>
-                </AboutMeSection>
-                <AboutMeSection>
-                    <AboutMeBoton>
-                        <AboutMeContacto href="mailto:sepape.frontend@sepape.com">Contáctame</AboutMeContacto>
-                    </AboutMeBoton>
                     <AboutMeSkills>
                         <OverFlow class="text">
                             <AboutMeTitulo className="animate__animated animate__slideInUp">Habilidades</AboutMeTitulo>  

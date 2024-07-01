@@ -18,33 +18,31 @@ function AboutMeMobile() {
         <AboutMe>
             <AboutMeLista>
                 <AboutMeSection>
-                    <AboutMeImage src={imagenperfil} alt="imagen de perfil"></AboutMeImage>
+                    <AboutMeTexto>
+                        <AboutMeTitulo className="animate__animated animate__slideInUp">Sobre mí</AboutMeTitulo>
+                    </AboutMeTexto>
                     <AboutMeCajaTexto>
-                        <AboutMeTexto>
-                            <AboutMeTitulo className="animate__animated animate__slideInUp">Sobre mí</AboutMeTitulo> 
-                        </AboutMeTexto>
                         <AboutMeTexto>
                             <AboutMeParrafo>{proyecto.acf.introduccionpagina}</AboutMeParrafo>
                         </AboutMeTexto>
                     </AboutMeCajaTexto>
-                </AboutMeSection>
-                <AboutMeSectionDown>
-                    <AboutMeBoton>
-                        <AboutMeContacto href="mailto:sepape.frontend@sepape.com">Contáctame</AboutMeContacto>
-                    </AboutMeBoton>
+                    <AboutMeImage src={imagenperfil} alt="imagen de perfil"></AboutMeImage>
                     <AboutMeSkills>
                         <OverFlow class="text">
-                            <AboutMeTitulo className="animate__animated animate__slideInUp">Habilidades</AboutMeTitulo>  
+                            <AboutMeTitulo className="animate__animated animate__slideInUp">Habilidades</AboutMeTitulo>
                         </OverFlow>
                         <AboutMeSkillsList>
-                            { proyecto.acf.herramientaspagina.map((tool) => 
+                            {proyecto.acf.herramientaspagina.map((tool) =>
                                 <li>
                                     <AboutMeParrafo>{tool.nombre}</AboutMeParrafo>
                                 </li>
-                            ) }
+                            )}
                         </AboutMeSkillsList>
-                    </AboutMeSkills>   
-                </AboutMeSectionDown>
+                    </AboutMeSkills>
+                    <AboutMeBoton>
+                        <AboutMeContacto href="mailto:sepape.frontend@sepape.com">Contáctame</AboutMeContacto>
+                    </AboutMeBoton>
+                </AboutMeSection>
             </AboutMeLista>
         </AboutMe>
     )

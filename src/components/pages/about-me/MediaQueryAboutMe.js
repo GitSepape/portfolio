@@ -5,12 +5,12 @@ import AboutMeMobile from './AboutMeMobile';
 class MediaQueryAboutMe extends Component {
     constructor(props) {
         super(props)
-        this.state = { matches: window.matchMedia("(min-width: 640px)").matches };
+        this.state = { matches: window.matchMedia("(min-width: 681px)").matches };
     }
 
     componentDidMount() {
         const handler = e => this.setState({matches: e.matches});
-        window.matchMedia("(min-width: 640px)").addEventListener('change', handler);
+        window.matchMedia("(min-width: 681px)").addEventListener('change', handler);
     }
     render() {
         return (
