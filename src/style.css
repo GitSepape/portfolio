@@ -558,6 +558,57 @@ ul {
           justify-content: flex-end;
 }
 
+.cv__language {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.translate-box {
+  border: 1px solid black;
+  width: 40px;
+  margin-left: 1rem;
+}
+
+.translate-button {
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: transparent;
+}
+
+.translate-button.en {
+  color: #333;
+}
+
+.translate-button.es {
+  color: #333;
+}
+
+.flag {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+
+.flag img {
+  width: 100%;
+  height: 100%;
+}
+
 /*------------------------------------*
 $TOPBAR
 *------------------------------------*/
@@ -796,6 +847,7 @@ $MEDIAQUERY
 @media all and (max-width: 681px) {
   .cards {
     padding: 0;
+    margin-bottom: 1.6rem;
   }
 }
 .detalles {

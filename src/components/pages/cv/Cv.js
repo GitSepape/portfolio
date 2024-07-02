@@ -2,13 +2,10 @@ import { useState } from "react";
 import React from "react";
 import curriculum from "./curriculum";
 import { CvContainer, CvEducation, CvExperience, CvLinks, CvPresentation, CvSkills } from "./CvStyle";
+import TranslateButton from "../../buttons/TranslateButton";
 
 function Cv() {
   const [language, setLanguage] = useState('spanish');
-
-  const changeLanguage = (lang) => {
-    setLanguage(lang);
-  }
 
   const cv = curriculum[language];
 
@@ -16,8 +13,7 @@ function Cv() {
     <section className="cv">
       <CvContainer>
         <nav className="cv__language">
-          <button onClick={() => changeLanguage('english')}>English</button>
-          <button onClick={() => changeLanguage('spanish')}>Español</button>
+          <TranslateButton language={language} onChangeLanguage={setLanguage} />
         </nav>
         <article className="cv__content">
           <CvPresentation>

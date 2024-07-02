@@ -63,19 +63,30 @@ export const AboutMeImage = styled.img`
     border-radius: 1.6rem;
     border: 1px solid black;
     box-shadow: grey 0px 0px 2px;
+
+    @media only screen and (max-width: 680px) {
+        margin: 1.6rem 0;
+    }
 `;
 
 export const AboutMeCajaTexto = styled.ol`
+    @media only screen and (max-width: 680px) {
+        margin: 0;
+    }
 `;
 
 export const AboutMeTexto = styled.li`
     overflow: hidden;
+
+    @media only screen and (max-width: 680px) {
+        margin-top: 1.4rem;
+    }
 `;
 
 export const AboutMeTitulo = styled.h3`
 font-size: 5rem;
 
-@media only screen and (max-width:340px) {
+@media only screen and (max-width:680px) {
     font-size: 3rem;
 }
 `;
@@ -87,6 +98,10 @@ export const AboutMeBoton = styled.button`
     padding: 1.6rem 0;
     border: 1px solid black;
     border-radius: 8px;
+
+    @media only screen and (max-width: 680px) {
+        margin-bottom: 1.6rem;
+    }
 `;
 
 export const AboutMeSkills = styled.article`
