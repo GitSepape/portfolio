@@ -17,11 +17,11 @@ function TranslateButton({ language, onChangeLanguage }) {
 
   return (
     <nav className="cv__language">
+      <span className='cv__language--text'>{language === 'english' ? 'Seleccionar idioma' : 'Select language'}</span>
       <button
         className={`translate-button ${language === 'english' ? 'en' : 'es'}`}
         onClick={handleToggleLanguage}
       >
-        <span>{language === 'english' ? 'Seleccionar idioma' : 'Select language'}</span>
         <div className="translate-box">
           <span
             className="flag"

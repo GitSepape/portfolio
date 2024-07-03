@@ -12,9 +12,7 @@ function Cv() {
   return (
     <section className="cv">
       <CvContainer>
-        <nav className="cv__language">
-          <TranslateButton language={language} onChangeLanguage={setLanguage} />
-        </nav>
+        <TranslateButton language={language} onChangeLanguage={setLanguage} />
         <article className="cv__content">
           <CvPresentation>
             <h1 className="cv__presentation--title">{cv.title.name}</h1>

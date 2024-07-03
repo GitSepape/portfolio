@@ -102,17 +102,30 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 1rem;
+    margin-right: 1rem;
+
+    &--text {
+        font-size: 1.4rem;
+        margin-right: 1rem;
+
+        @media all and (max-width: 680px) {
+            font-size: 1rem;
+            margin-right: 0.5rem;
+        }
+    }
 }
 
 .translate-box {
-    border: 1px solid black;
-    width: 40px;
-    margin-left: 1rem;
+    border: 1px solid #333;
+    border-radius: 15px;
+    background-color: #333;
+    width: 56px;
+    height: 30px;
 }
 
 .translate-button {
     border: none;
-    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     display: flex;
@@ -130,8 +143,12 @@
 
 .flag {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
+    padding: 4px;
+    margin-top: 1px;
+    border-radius: 100px;
+    background-color: white;
 }
 
 .flag img {
