@@ -8,7 +8,7 @@ function Cv() {
   const [language, setLanguage] = useState('spanish');
 
   const cv = curriculum[language];
-
+  
   return (
     <section className="cv">
       <CvContainer>
